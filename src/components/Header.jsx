@@ -75,14 +75,14 @@ const Header = () => {
                     </ul>
                     <div className='flex items-center md:ms-[45px]'>
                         <span>
-                            <Link to="/shop">
+                            <Link to="/shop" onClick={() => setShow(!show)}>
                                 <img src={search} alt="" />
                             </Link>
                         </span>
                         <span className='ms-[15px] relative'>
-                            <Link to="/basket">
+                            <Link to="/basket" onClick={() => setShow(!show)}>
                                 <img src={basket} alt="" />
-                                <span className='bg-red-600 text-[#fff] font-medium translate-x-[-50%] translate-y-[-50%]  absolute left-[100%] top-0 text-[14px] rounded-[10px] px-[5px]'>{totalQuantity}</span>
+                                <span className='bg-[#F6623E] text-[#fff] font-medium translate-x-[-50%] translate-y-[-50%]  absolute left-[100%] top-0 text-[14px] rounded-[10px] px-[5px]'>{totalQuantity}</span>
                             </Link>
                         </span>
                     </div>
