@@ -1,0 +1,23 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+
+@media screen and (max-width: 768px) {
+    .nav{
+        position: absolute;
+        /* margin: 160px 0 0 0; */
+        top: 160px;
+        left: -100%;
+        width: 20rem;
+        height: 100vh;
+        background-color: #F6623E;
+        z-index: 8;
+        flex-direction: column;
+        align-items: center;
+        transition: 800ms ease-in-out;
+        color: #fff;
+        padding: 45px 0 200px 0;
+    }
+}
